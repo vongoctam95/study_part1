@@ -153,17 +153,19 @@ ul.topnav li.dropdownIcon {
     padding: 10px 10px;
 }
 .col-7 .textbox{
+    background-color: #c2d2ea;
+    box-sizing: border-box;
     margin: 10px 10px;
-    padding: 10px 10px;
-    /* line-height: 1.5px;
-    letter-spacing: 1px; */
+    padding: 20px 20px;
     font-size: 25px;
     font-weight: bold;
+    border: 1px  solid black;
 
 }
 
 
 .imgbox{
+    margin: 10px 10px;
     display: block;
     max-height: 368px;
     background-size: cover;
