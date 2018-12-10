@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    line-height: 1;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    padding:4% 0;
+    height: auto;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/* navbar */
+nav {
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    background-color: #00000096;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+ul.topnav li {
+    list-style: none;
+    float: left;
+}
+
+ul.topnav li.topnav-right {
+    float: right;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    min-height: 16px;
+    text-align: center;
+    color: #fff;
+    padding: 14px;
+}
+
+nav ul li a:hover {
+    color: red;
+    background-color: azure;
+}
+
+
+ul.topnav li.dropdownIcon {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+/* ************ custom style *********** */
+#radient{
+    background-image: linear-gradient(to top,#2196f3bd,#ffffff7d);
+}
+
+.row .col-6 h2{
+    margin: 10px;
+}
+
+    
+
+.row .col-6 form h3{
+    text-transform: uppercase;
+    margin: 10px;
+}
+.row .col-6 form input{
+    margin: 10px;
+    padding:  10px 5px;;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    min-width: 300px;
+}
+.leftSlide-col{
+    margin-left: 30%;
+}
+
+.boxbox{
+    text-decoration: none;
+    color: black;
+}
+
+ .box{
+     background-color: aliceblue;
+     box-shadow: 0 0 0 1px #c2d2ea;
+     text-align: center;
+     margin: 25px;
+     padding: 5px;
+ }
+
+
+
+ .row .col-12{
+     display: flex;
+     margin: auto;
+ }
+
+ .button{
+     margin: auto;
+     text-align: center;
+     padding: 10px 10px;
+     background-color: #2196f3d9;
+     border: none;
+ }
+ .button a{
+     text-decoration: none;
+     font-size: 15px;
+     font-weight: bold;
+     color: black;
+ }
+
+
+/* **************Css  for sx***************** */
+.sx{
+    background-color: #00ffff3b;
+    padding: 10px 10px;
+}
+.col-7 .textbox{
+    margin: 10px 10px;
+    padding: 10px 10px;
+    /* line-height: 1.5px;
+    letter-spacing: 1px; */
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+
+.imgbox{
+    display: block;
+    max-height: 368px;
+    background-size: cover;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px 2px #0000009e;
+
+}
+.imgbox img{
+    width: 100%;
+}
+
+
+
+/* ***************css  for footer****************** */
+
+footer{
+    background-color: #0000005e;
+}
+
+.fixle{
+    padding: 10px;
+}
+
+.tittle{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 0;
+
+}
+.row .col-3 li{
+    list-style: none;
+}.row .col-3 li a{
+    text-decoration: none;
+    color:#ffffffad;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+/* *****************mobile*************************/
+@media screen and (max-width:680px) {
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+
+    ul.topnav li.dropdownIcon {
+        display: block;
+        float: right;
+    }
+    ul.topnav.reponsive li.dropdownIcon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    ul.topnav.reponsive {
+        position: relative;
+    }
+    
+
+    ul.topnav.reponsive li {
+        display: inline;
+        float: none;
+    }
+
+    ul.topnav.reponsive li a {
+        display: block;
+        text-align: left;
+    }
+
+
+
+    .col-6,.col-4,.col-7,.col-5{
+        width: 100%;
+        margin: 0;
+    }
+    .col-3{
+        width: 50%;
+    }
+    div.leftSlide-col,div.rightSlide-col{
+        margin: 15px;
+    }
+    .videoConatiner iframe{
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+
+}
